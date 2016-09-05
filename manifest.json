@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+  "name": "Double right click to copy",
+  "description": "Adds \"double click to copy URL\" functionality to all web pages",
+  "version": "0.5",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "jquery-3.1.0.min.js",
+        "content.js"
+      ]
+    }
+  ],
+  "permissions": [
+    "clipboardWrite"
+  ]
+}
